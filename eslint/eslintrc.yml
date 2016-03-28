@@ -21,7 +21,7 @@ globals:
 
 extends:
     # Extend the base Body Labs style, which is pulled in via peerDependencies.
-    "../../bodylabs-javascript-style/eslintrc-shared.yml"
+    "../../bodylabs-javascript-style/eslint/eslintrc-shared.yml"
 
 rules:
     # 2 means error, 1 means warning, 0 means ignore.

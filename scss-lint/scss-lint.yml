@@ -1,0 +1,18 @@
+# The default for scss_files is "**/*.scss". That seems a bit silly. We
+# already specify the paths to our scss files in components.js. The build
+# system excludes vendored code and then passes the paths to the linter.
+# So just override this, to disable it.
+scss_files: null
+
+linters:
+    Indentation:
+        width: 4
+
+    # We use color keywords where appropriate in lieu of hexadecimals as they are
+    # more semantically clear.
+    ColorKeyword:
+        enabled: false
+
+    PropertySortOrder:
+        order: smacss
+        separate_groups: true

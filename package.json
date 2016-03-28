@@ -1,0 +1,15 @@
+{
+  "name": "bodylabs-frontend-style",
+  "version": "1.0.0",
+  "description": "JavaScript and SASS style for Body Labs front-end projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bodylabs/bodylabs-frontend-style.git"
+  },
+  "author": "Body Labs",
+  "license": "MIT",
+  "homepage": "https://github.com/bodylabs/bodylabs-frontend-style",
+  "peerDependencies": {
+    "bodylabs-javascript-style": "*"
+  }
+}

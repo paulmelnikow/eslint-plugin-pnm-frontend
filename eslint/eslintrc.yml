@@ -8,6 +8,8 @@ plugins:
     - "react"
 
 parserOptions:
+    # Allow ES6 modules.
+    sourceType: 'module'
     # Allow JSX.
     ecmaFeatures:
         jsx: true

@@ -5,7 +5,7 @@ env:
     browser: true
 
 plugins:
-    - "react"
+    - 'react'
 
 parserOptions:
     # Allow ES6 modules.
@@ -23,15 +23,21 @@ globals:
 
 extends:
     # Extend the base Body Labs style, which is pulled in via peerDependencies.
-    "../../bodylabs-javascript-style/eslint/eslintrc-shared.yml"
+    - '../../bodylabs-javascript-style/eslint/eslintrc-shared.yml'
+
+    # Pull in https://github.com/yannickcr/eslint-plugin-react
+    - 'plugin:react/recommended'
 
 rules:
-    # 2 means error, 1 means warning, 0 means ignore.
-
     # JSX.
-    # eslint-plugin-react is required
-    # https://github.com/yannickcr/eslint-plugin-react
-    jsx-quotes: 2
+    jsx-quotes: 'error'
+
+    # More JSX, from https://github.com/yannickcr/eslint-plugin-react
+    react/jsx-curly-spacing: ['error', 'always']
+    react/jsx-equals-spacing: ['error', 'never']
+    react/jsx-indent: 'error'
+    react/jsx-pascal-case: 'error'
+    react/jsx-space-before-closing: 'error'
 
     # Prevent spurious warnings in JSX code.
     react/jsx-uses-react: 1

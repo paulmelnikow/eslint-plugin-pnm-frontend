@@ -10,6 +10,8 @@
   "license": "MIT",
   "homepage": "https://github.com/bodylabs/bodylabs-frontend-style",
   "peerDependencies": {
-    "bodylabs-javascript-style": "*"
+    "bodylabs-javascript-style": "*",
+    "eslint": ">=2.4.0",
+    "eslint-plugin-react": ">=4.2.3"
   }
 }

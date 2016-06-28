@@ -1,18 +1,21 @@
 {
-  "name": "bodylabs-frontend-style",
-  "version": "2.0.1",
+  "name": "eslint-plugin-bodylabs-frontend",
+  "version": "3.0.0",
   "description": "JavaScript and SASS style for Body Labs front-end projects",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bodylabs/bodylabs-frontend-style.git"
+    "url": "https://github.com/bodylabs/eslint-plugin-bodylabs-frontend.git"
   },
   "author": "Body Labs",
   "license": "MIT",
-  "homepage": "https://github.com/bodylabs/bodylabs-frontend-style",
+  "homepage": "https://github.com/bodylabs/eslint-plugin-bodylabs-frontend",
   "peerDependencies": {
     "babel-eslint": ">=6.0.2",
-    "bodylabs-javascript-style": "*",
-    "eslint": ">=2.4.0",
+    "eslint-plugin-bodylabs": "*",
+    "eslint": ">=2.13.0",
     "eslint-plugin-react": ">=4.2.3"
+  },
+  "dependencies": {
+    "js-yaml": ">=3"
   }
 }

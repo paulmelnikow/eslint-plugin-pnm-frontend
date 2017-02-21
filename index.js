@@ -6,12 +6,12 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 const loadConfig = (name) => {
-    const configPath = path.resolve(__dirname, 'eslint', `${ name }.yml`);
-    return yaml.load(fs.readFileSync(configPath, 'utf8'));
+  const configPath = path.resolve(__dirname, 'eslint', `${ name }.yml`);
+  return yaml.load(fs.readFileSync(configPath, 'utf8'));
 };
 
 module.exports = {
-    configs: {
-        frontend: loadConfig('frontend'),
-    },
+  configs: {
+    react: loadConfig('react'),
+  },
 };

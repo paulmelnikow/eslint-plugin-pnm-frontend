@@ -13,15 +13,8 @@ parserOptions:
     ecmaFeatures:
         jsx: true
 
-# These are defined in dev-tools/Gruntfile-shared.js in the front-end build
-# system.
-globals:
-    __project_root: true
-    __node_modules: true
-    __dev_tools: true
-
 extends:
-    - 'plugin:bodylabs/common'
+    - 'plugin:pnm/common'
     - 'plugin:react/recommended'
 
 rules:
@@ -31,7 +24,7 @@ rules:
     # More JSX, from https://github.com/yannickcr/eslint-plugin-react
     react/jsx-curly-spacing: ['error', 'always']
     react/jsx-equals-spacing: ['error', 'never']
-    react/jsx-indent: 'error'
+    react/jsx-indent: ['error', 2]
     react/jsx-pascal-case: 'error'
     react/jsx-space-before-closing: 'error'
 

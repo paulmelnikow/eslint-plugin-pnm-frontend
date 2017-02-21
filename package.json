@@ -1,17 +1,17 @@
 {
-  "name": "eslint-plugin-bodylabs-frontend",
-  "version": "3.0.0",
-  "description": "JavaScript and SASS style for Body Labs front-end projects",
+  "name": "eslint-plugin-pnm-frontend",
+  "version": "1.0.0",
+  "description": "Paul's JavaScript and SASS style for front-end projects",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bodylabs/eslint-plugin-bodylabs-frontend.git"
+    "url": "https://github.com/paulmelnikow/eslint-plugin-pnm-frontend.git"
   },
-  "author": "Body Labs",
+  "author": "Paul Melnikow",
   "license": "MIT",
-  "homepage": "https://github.com/bodylabs/eslint-plugin-bodylabs-frontend",
+  "homepage": "https://github.com/paulmelnikow/eslint-plugin-pnm-frontend",
   "peerDependencies": {
     "babel-eslint": ">=6.0.2",
-    "eslint-plugin-bodylabs": "*",
+    "eslint-plugin-pnm": "*",
     "eslint": ">=2.13.0",
     "eslint-plugin-react": ">=4.2.3"
   },

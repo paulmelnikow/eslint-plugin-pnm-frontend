@@ -6,7 +6,7 @@ scss_files: null
 
 linters:
     Indentation:
-        width: 4
+        width: 2
 
     # We use color keywords where appropriate in lieu of hexadecimals as they are
     # more semantically clear.

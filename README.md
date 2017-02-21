@@ -19,7 +19,7 @@ Usage
 -----
 
 ```sh
-npm install --save-dev eslint eslint-plugin-pnm eslint-plugin-pnm-frontend eslint-plugin-react babel-eslint
+npm install --save-dev parallelshell eslint eslint-plugin-pnm eslint-plugin-pnm-frontend eslint-plugin-react babel-eslint
 ```
 
 In your project, create `.eslintrc.yml`:
@@ -33,9 +33,13 @@ And then set up scripts:
 
 ```json
 "scripts": {
-  "lint": "eslint '**/*.js'",
+  "preinstall": "command -v bundle >/dev/null 2>&1 || { echo >&2 Please sudo gem install bundler. Aborting.; exit 1; }",
+  "install": "bundle install --path .bundle",
+  "lint:sass": "bundle exec scss-lint --config node_modules/eslint-plugin-pnm-frontend/scss-lint/scss-lint.yml src",
+  "lint:js": "eslint '**/*.js'",
+  "lint": "parallelshell 'npm run lint:sass' 'npm run lint:js'",
   "unittest": "mocha src",
-  "test": "npm run lint && npm run unittest"
+  "test": "parallelshell 'npm run test:js' 'npm run lint:sass' 'npm run lint:js'"
 }
 ```
 

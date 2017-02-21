@@ -5,14 +5,14 @@
 scss_files: null
 
 linters:
-    Indentation:
-        width: 2
+  Indentation:
+    width: 2
 
-    # We use color keywords where appropriate in lieu of hexadecimals as they are
-    # more semantically clear.
-    ColorKeyword:
-        enabled: false
+  # We use color keywords where appropriate in lieu of hexadecimals as they are
+  # more semantically clear.
+  ColorKeyword:
+    enabled: false
 
-    PropertySortOrder:
-        order: smacss
-        separate_groups: true
+  PropertySortOrder:
+    order: smacss
+    separate_groups: true

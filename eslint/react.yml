@@ -1,33 +1,33 @@
 env:
-    browser: true
+  browser: true
 
 plugins:
-    - 'react'
+  - 'react'
 
 parser: 'babel-eslint'
 
 parserOptions:
-    # Allow ES6 modules.
-    sourceType: 'module'
-    # Allow JSX.
-    ecmaFeatures:
-        jsx: true
+  # Allow ES6 modules.
+  sourceType: 'module'
+  # Allow JSX.
+  ecmaFeatures:
+    jsx: true
 
 extends:
-    - 'plugin:pnm/common'
-    - 'plugin:react/recommended'
+  - 'plugin:pnm/common'
+  - 'plugin:react/recommended'
 
 rules:
-    # JSX.
-    jsx-quotes: 'error'
+  # JSX.
+  jsx-quotes: 'error'
 
-    # More JSX, from https://github.com/yannickcr/eslint-plugin-react
-    react/jsx-curly-spacing: ['error', 'always']
-    react/jsx-equals-spacing: ['error', 'never']
-    react/jsx-indent: ['error', 2]
-    react/jsx-pascal-case: 'error'
-    react/jsx-space-before-closing: 'error'
+  # More JSX, from https://github.com/yannickcr/eslint-plugin-react
+  react/jsx-curly-spacing: ['error', 'always']
+  react/jsx-equals-spacing: ['error', 'never']
+  react/jsx-indent: ['error', 2]
+  react/jsx-pascal-case: 'error'
+  react/jsx-space-before-closing: 'error'
 
-    # Prevent spurious warnings in JSX code.
-    react/jsx-uses-react: 1
-    react/jsx-uses-vars: 1
+  # Prevent spurious warnings in JSX code.
+  react/jsx-uses-react: 1
+  react/jsx-uses-vars: 1

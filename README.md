@@ -19,7 +19,7 @@ Usage
 -----
 
 ```sh
-npm install --save-dev parallelshell eslint eslint-plugin-pnm eslint-plugin-pnm-frontend eslint-plugin-react babel-eslint
+npm install --save-dev npm-run-all eslint eslint-plugin-pnm eslint-plugin-pnm-frontend eslint-plugin-react babel-eslint
 ```
 
 In your project, create `.eslintrc.yml`:
@@ -37,9 +37,9 @@ And then set up scripts:
   "install": "bundle install --path .bundle",
   "lint:sass": "bundle exec scss-lint --config node_modules/eslint-plugin-pnm-frontend/scss-lint/scss-lint.yml src",
   "lint:js": "eslint '**/*.js'",
-  "lint": "parallelshell 'npm run lint:sass' 'npm run lint:js'",
-  "unittest": "mocha src",
-  "test": "parallelshell 'npm run test:js' 'npm run lint:sass' 'npm run lint:js'"
+  "lint": "run-p --silent --continue-on-error lint:sass lint:js",
+  "test:js": "mocha src",
+  "test": "run-p --silent --continue-on-error test:js lint:**",
 }
 ```
 

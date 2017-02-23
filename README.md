@@ -19,7 +19,7 @@ Usage
 -----
 
 ```sh
-npm install --save-dev npm-run-all eslint eslint-plugin-pnm eslint-plugin-pnm-frontend eslint-plugin-react babel-eslint
+npm install --save-dev npm-run-all eslint eslint-plugin-pnm eslint-plugin-pnm-frontend eslint-plugin-react
 ```
 
 In your project, create `.eslintrc.yml`:

@@ -10,10 +10,9 @@
   "license": "MIT",
   "homepage": "https://github.com/paulmelnikow/eslint-plugin-pnm-frontend",
   "peerDependencies": {
-    "babel-eslint": ">=6.0.2",
     "eslint-plugin-pnm": "*",
-    "eslint": ">=2.13.0",
-    "eslint-plugin-react": ">=4.2.3"
+    "eslint": ">=3.0.0",
+    "eslint-plugin-react": ">=6.10.0"
   },
   "dependencies": {
     "js-yaml": ">=3"

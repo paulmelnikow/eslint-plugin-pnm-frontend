@@ -4,8 +4,6 @@ env:
 plugins:
   - 'react'
 
-parser: 'babel-eslint'
-
 parserOptions:
   # Allow ES6 modules.
   sourceType: 'module'
